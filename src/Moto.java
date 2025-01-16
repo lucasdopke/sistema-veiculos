@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
+public class Moto extends Veiculo {
 
-public class Moto {
 }
