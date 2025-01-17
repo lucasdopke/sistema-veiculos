@@ -2,7 +2,7 @@ public class Moto extends Veiculo {
     boolean temBagageiro;
 
     //get e set
-    public boolean isTemBagageiro() {
+    public boolean TemBagageiro() {
         return temBagageiro;
     }
     public void setTemBagageiro(boolean temBagageiro) {
