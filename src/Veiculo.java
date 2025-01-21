@@ -1,15 +1,16 @@
 public abstract class Veiculo {
-    String marca;
-    String modelo;
-    int ano;
+    private String marca;
+    private String modelo;
+    private int ano;
 
     protected void exibirDetalhes(){
 
-        System.out.println("Marca: " + marca);
+        System.out.println("Marca: " + getMarca());
         System.out.println("Modelo: " + modelo);
         System.out.println("Ano: " + ano);
 
     }
+
     protected abstract void acelerar();
     protected abstract void frear();
 

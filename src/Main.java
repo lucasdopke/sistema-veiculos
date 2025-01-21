@@ -3,11 +3,7 @@
 public class Main {
     public static void main(String[] args) {
 
-            Carro voyage = new Carro();
-            voyage.setModelo("Sedan");
-            voyage.setAno(2015);
-            voyage.setMarca("volkswagen");
-            voyage.setCapacidadePortaMalas(200);
+            Carro voyage = new Carro("volkswagen" , "Sedan" , 2015 , 200);
 
             Moto mt = new Moto();
             mt.setModelo("naked");
@@ -25,5 +21,7 @@ public class Main {
             mt.exibirDetalhes();
             mt.acelerar();
             mt.frear();
+
+            Carro.teste();
     }
 }
