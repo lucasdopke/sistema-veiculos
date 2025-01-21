@@ -22,6 +22,7 @@ public class Main {
             mt.acelerar();
             mt.frear();
 
-            Carro.teste();
+            System.out.println("Total de Carros: " + Carro.getContarCarros());
+            System.out.println("Total de Motos: " + Moto.getContarMotos());
     }
 }

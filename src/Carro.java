@@ -1,13 +1,15 @@
 public class Carro extends Veiculo{
     private int capacidadePortaMalas;
+    private static int contarCarros = 0;
 
     public Carro(String marca , String modelo , int ano , int capacidadePortaMalas ){
         super.setMarca(marca);
         super.setModelo(modelo);
         super.setAno(ano);
         this.setCapacidadePortaMalas(capacidadePortaMalas);
+        contarCarros++;
     }
-    //get e set
+
     public int getCapacidadePortaMalas() {
         return capacidadePortaMalas;
     }
@@ -23,9 +25,8 @@ public class Carro extends Veiculo{
     protected void frear(){
         System.out.println("Carro freando");
     }
-    static void teste(){
-        System.out.println("teste");
-
+    static int getContarCarros(){
+    return contarCarros;
     }
 
 }

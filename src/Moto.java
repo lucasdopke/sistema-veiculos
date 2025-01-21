@@ -1,7 +1,11 @@
 public class Moto extends Veiculo {
     boolean temBagageiro;
+    private static int contarMotos = 0;
 
-    //get e set
+    public Moto() {
+        contarMotos++;
+    }
+
     public boolean TemBagageiro() {
         return temBagageiro;
     }
@@ -16,5 +20,8 @@ public class Moto extends Veiculo {
     @Override
     protected void frear() {
         System.out.println("Moto freando");
+    }
+    static int getContarMotos() {
+        return contarMotos;
     }
 }
