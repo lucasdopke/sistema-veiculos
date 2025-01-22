@@ -1,9 +1,7 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
+public static void main(String[] args) {
 
             Carro voyage = new Carro("volkswagen" , "Sedan" , 2015 , 200);
+            new CarroDAO().cadastrarCarro(voyage);
 
             Moto mt = new Moto();
             mt.setModelo("naked");
@@ -16,7 +14,6 @@ public class Main {
             voyage.acelerar();
             voyage.frear();
 
-
             System.out.println("Detalhes do Moto");
             mt.exibirDetalhes();
             mt.acelerar();
@@ -24,5 +21,5 @@ public class Main {
 
             System.out.println("Total de Carros: " + Carro.getContarCarros());
             System.out.println("Total de Motos: " + Moto.getContarMotos());
-    }
+
 }
