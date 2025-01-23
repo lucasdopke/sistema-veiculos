@@ -3,11 +3,9 @@ public static void main(String[] args) {
             Carro voyage = new Carro("volkswagen" , "Sedan" , 2015 , 200);
             new CarroDAO().cadastrarCarro(voyage);
 
-            Moto mt = new Moto();
-            mt.setModelo("naked");
-            mt.setAno(2020);
-            mt.setMarca("yamaha");
-            mt.setTemBagageiro(false);
+            Moto mt = new Moto("yamaha" , "naked" , 2020 , false);
+            Moto cg = new Moto("honda" , "cargo" , 2011 , true);
+            new MotoDAO().cadastrarMoto(mt);
 
             System.out.println("Detalhes do Carro");
             voyage.exibirDetalhes();

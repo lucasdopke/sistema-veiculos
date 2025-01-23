@@ -4,7 +4,7 @@ import java.sql.SQLException;
 public class CarroDAO {
     public void cadastrarCarro(Carro carro) {
 
-        String sql = "insert into carro (marca, modelo, ano, capacidadePortaMalas) values(?,?,?,?)";
+        String sql = "insert into carros (marca, modelo, ano, capacidadePortaMalas) values(?,?,?,?)";
 
         PreparedStatement stmt = null;
         try {

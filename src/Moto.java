@@ -2,7 +2,11 @@ public class Moto extends Veiculo {
     boolean temBagageiro;
     private static int contarMotos = 0;
 
-    public Moto() {
+    public Moto(String marca , String modelo , int ano , boolean temBagageiro) {
+        super.setMarca(marca);
+        super.setModelo(modelo);
+        super.setAno(ano);
+        this.temBagageiro = temBagageiro;
         contarMotos++;
     }
 
@@ -24,4 +28,5 @@ public class Moto extends Veiculo {
     static int getContarMotos() {
         return contarMotos;
     }
+
 }
