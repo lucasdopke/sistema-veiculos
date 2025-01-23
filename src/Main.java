@@ -6,6 +6,7 @@ public static void main(String[] args) {
             Moto mt = new Moto("yamaha" , "naked" , 2020 , false);
             Moto cg = new Moto("honda" , "cargo" , 2011 , true);
             new MotoDAO().cadastrarMoto(mt);
+            new MotoDAO().cadastrarMoto(cg);
 
             System.out.println("Detalhes do Carro");
             voyage.exibirDetalhes();
